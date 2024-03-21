@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.head{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/05/Robert-Pattinson-as-Bruce-Wayne-in-The-Batman-and-Christian-Bale-in-Batman-Begins.jpg');
+    background-position: 40%;
+}
+
+.banner-2 {
+    background-image: url('https://heraldodemexico.com.mx/u/fotografias/m/2022/2/3/f1280x720-474266_605941_5050.jpg');
+    background-position: 40%;
+}
+
+.banner-3 {
+    background-image: url('https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/03/batman-comisario-gordon-2632833.jpg?tf=3840x');   
+}
+
+.banner-4 {
+    background-image: url('https://rollingstone.uol.com.br/media/uploads/ator_paul_dano_foto_por_frazer_harrison_getty_images_e_paul_dano_como_charada_em_the_batman_foto_divulgacao_warner.png');
+}
+
+.banner-5 {
+    background-image: url('https://ultimasnoticias.com.ve/wp-content/uploads/2023/01/Colin-Farrell.jpg')
+}
+
+.banner-6 {
+    background-image: url('https://rollingstone.uol.com.br/media/uploads/andy_serkis_em_the_batman_foto_divulgacao__warner_bros..jpg');
+}
+
+.banner-7 {
+    background-image: url('https://s2-gshow.glbimg.com/Nb9CLbpXifvlt4KO5rBrXWDVkLk=/0x0:1176x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2021/D/6/biEWZhSR2zc1CXyGhcAQ/jn.jpg');
+}
+
+.cards-content {
+    grid-template-columns: 1fr;
+    width: 80%;
+
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navegation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 1280px){
+    .banner-1{
+        background-position: 30%;
+    }
+    
+    .banner-2{
+        background-position: 30%;
+    }
+    
+    .banner-3{
+        background-position: 50%;
+    }
+    
+    .banner-4{
+        background-position: 20%;
+    }
+    
+    .banner-6{
+        background-position: 48%;
+    }
+    
+    .banner-7{
+        background-position: 45%;
+    }
+    
+}
+
+
+@media(max-width: 768px){
+
+
+    .footer-navegation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    
+    }
+    #banner{
+        background-position: 50%;
+    }
+
+
+.banner-1{
+    background-position: 30%;
+}
+
+.banner-2{
+    background-position: 30%;
+}
+
+.banner-3{
+    background-position: 50%;
+}
+
+.banner-4{
+    background-position: 20%;
+}
+
+.banner-5{
+    background-position: 10%;
+}
+
+.banner-6{
+    background-position: 48%;
+}
+
+.banner-7{
+    background-position: 45%;
+}
+
+}
+    
